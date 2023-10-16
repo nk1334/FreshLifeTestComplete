@@ -1,0 +1,56 @@
+﻿Browsers.Item(btChrome).Run("https://www.hollandandbarrett.com/");
+let alertbutton=Aliases.Browser(btChrome).Page("*").Panel("onetrust-accept-btn-handler").Button("onetrust-accept-btn-handler");
+if(alertbutton.Exists){
+  alert.Button.Click();
+  let Account=Aliases.Browser(btChrome).Page("*").Find("xpath","//span[text()=' Account']");
+  Account.click();
+  let emailaddress=Aliases.browser(btChrome).Page("*").Find("name","username")
+  emailaddress.SetText("abcxyz@gmail.com");
+  let pswdfield=Aliases.browser(btChrome).Page("*").Find("name","password")
+  password.setText("Abcxyz@!")
+  let SignIn=Aliases.Broswe(btChrome).Page("Signin").Find("xpath","//button[@class='c03525a04 ca5866931 cda6ccd84 c67906ae7 cd6731ef1']")
+  SignIn.click;
+  let Food=Aliases.Browser(btChrome).Page("Food").Find("xpath","//div[text()='Food & Drink']");
+  	Food.click();
+   let vegan=Aliases.Browser(btChrome).Page("vegan").Find("linkText","Snacks");
+   vegan.click();
+   let mix=Aliases.Browser(btChrome.Page("mix").Find("linkText","Chocolate, Cakes & Biscuits");
+   mix.click();
+   let choco=Aliases.Browser(btChrome.Page("choco").Find("linkText","Chocolate");
+ choco.click();
+   let vegcho=Aliases.Browser(btChrome.Page("vegcho").Find("xpath","//span[text()='Vegan Chocolate']");
+vegcho.click();
+   let mix=Aliases.Browser(btChrome.Page("mix").Find("xpath","//div[text()='Add to basket']");
+		mix.click();
+      let Categories=Aliases.Browser(btChrome.Page("Categories").Find("xpath","//div[text()='Vitamins & Supplements']");
+		Categories.click();
+     let Discover=Aliases.Browser(btChrome.Page("Discover").Find("xpath","//button[text()='Discover the range']");
+		Discover.click();
+   
+      let Showmore=Aliases.Browser(btChrome.Page("Showmore").Find("xpath","//span[text()='Show more...']");
+		Showmore.click();
+   
+      let search=Aliases.Browser(btChrome.Page("search").Find("xpath","//input[@placeholder='Search...']");
+      search.SetKeys("Vitamin C");
+		search.click();
+   
+      let Allproducts=Aliases.Browser(btChrome.Page("Allproducts").Find("xpath","//label[@class='Checkbox-module_label__SfYmD Typography-module_base__h-bPx Typography-module_helvetica__-8F7V']");
+		Allproducts.click();
+   
+  let Addtobasket=Aliases.Browser(btChrome).Page("Addtobasket").Find("xpath","//div[text()='Add to basket']");
+  	Addtobasket.click();
+      let home=Aliases.Browser(btChrome).Page("home").Find("xpath","//span[@class='LinkText-module_link__OeM-A Typography-module_base__h-bPx Typography-module_helvetica__-8F7V']"); 
+      home.click();
+        let Join1=Aliases.Browser(btChrome).Page("Join1").Find("xpath","//span[text()='Rewards For Life']");
+  	Join1.click();
+      let icon=Aliases.Browser(btChrome).Page("icon").Find("xpath","//span[text()='Basket']")
+  	icon.click();
+    let  product1InBasket=Aliases.Browser(btChrome).page("*").Find("xpath","//div[contains(text(),'Vegan Chocolate')]");
+    let  product2InBasket=Aliases.Browser(btChrome).page("*").Find("xpath","//div[contains(text(),'Vitamin C')]");
+    if (product1InBasket != null && product2InBasket != null) {
+		    System.out.println("Both products are in the basket.");
+		} else {
+		    System.out.println("One or both products are missing from the basket.");
+		}
+  }
+  }

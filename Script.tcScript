@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="Module_1" key="{B0709A41-F4EC-45AB-B9CC-DC9DFAC5984C}" path="Module_1.js" />
+		<child name="Module_2" key="{718D564C-41B3-4512-A5B6-3B7CD1CD9E5B}" path="Module_2.js" />
+	</children>
+</Root>
